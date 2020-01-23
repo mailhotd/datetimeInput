@@ -39,6 +39,6 @@ print("Converting to Unix timestamp...")
 print('')
 dtu  = dt.replace(tzinfo=timezone.utc).timestamp()
 
-print("Unix Timestamp: "+str(dtu))
+print("Unix Timestamp: "+str(dtu)+ " seconds")
 print('')
     
