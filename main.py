@@ -29,16 +29,16 @@ if dt.year is not None:
         
     else:
         print('')
-        print("Date and time are valid")
+        print("Datetime " +str(dt)+" is valid")
         print('')
 
 else:
     print(dt+ " is valid")
 
-print("Converting to UTC...")
+print("Converting to Unix timestamp...")
 print('')
 dtu  = dt.replace(tzinfo=timezone.utc).timestamp()
 
-print("UCT: "+str(dtu) + " seconds")
+print("Unix Timestamp: "+str(dtu))
 print('')
     
